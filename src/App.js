@@ -44,7 +44,6 @@ const App = () => {
         onChangeHandler={onSearchChange}
         placeholder="Search Monsters"
       />
-      />
       <CardList monsters={filteredMonsters} />
     </div>
   );
