@@ -4,7 +4,6 @@ import CardList from "./components/cards-list/card-list.component";
 import SearchBox from "./components/search-box/search-box.component";
 
 import "./App.css";
-import logo from "./logo.svg";
 
 const App = () => {
   const [searchFelid, setSearchField] = useState(""); // [value, setValue]
@@ -45,12 +44,6 @@ const App = () => {
         onChangeHandler={onSearchChange}
         placeholder="Search Monsters"
       />
-      <br />
-
-      <SearchBox
-        className="title-search-box"
-        onChangeHandler={onTitleChange}
-        placeholder="set title"
       />
       <CardList monsters={filteredMonsters} />
     </div>
